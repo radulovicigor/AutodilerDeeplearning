@@ -67,11 +67,6 @@ yarn-error.log*
 *.sqlite
 *.sqlite3
 
-# Trained models and experiments (large binary files)
-# Note: backend/app/models/ contains SOURCE CODE (not ignored)
-/models/
-/experiments/
-
 # Jupyter
 .ipynb_checkpoints/
 
