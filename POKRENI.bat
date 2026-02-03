@@ -9,6 +9,15 @@ echo ║           Deep Learning for Car Price Prediction           ║
 echo ╚════════════════════════════════════════════════════════════╝
 echo.
 
+:: Kreiraj .env iz .env.example ako ne postoji (da profesor odmah moze da pokrene)
+if not exist "backend\.env" (
+    if exist "backend\.env.example" (
+        copy "backend\.env.example" "backend\.env" >nul
+        echo [OK] Kreiran backend\.env iz .env.example - mozes ga editovati po potrebi.
+        echo.
+    )
+)
+
 :: Provjeri da li postoji Python venv
 if not exist "backend\venv" (
     echo [!] Python virtualno okruzenje nije pronadjeno.

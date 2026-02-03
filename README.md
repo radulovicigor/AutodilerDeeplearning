@@ -78,7 +78,10 @@ npm run dev
 
 ### Brzo Pokretanje (Windows)
 
-Koristi `POKRENI.bat` za automatsko pokretanje oba servera.
+1. **Prvi put:** Pokreni `POKRENI.bat` — on automatski kreira `backend\.env` iz `backend\.env.example` ako fajl ne postoji, pa aplikacija radi odmah bez ručnog podešavanja.
+2. Backend i frontend će se pokrenuti u odvojenim prozorima; browser će se otvoriti na http://localhost:3000.
+
+**Napomena:** Pravi `.env` (sa lozinkama) se ne šalje u repo; u repou je samo `backend/.env.example`. Pri prvom pokretanju `POKRENI.bat` kopira ga u `backend/.env` tako da projekat radi odmah nakon kloniranja.
 
 ## 📁 Struktura Projekta
 
